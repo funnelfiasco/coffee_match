@@ -5,14 +5,14 @@ import random
 team = open('team.txt','r')
 i=0
 
-pgms = [ (random.random(), person) for person in team]
+people = [ (random.random(), person) for person in team]
 
-pgms.sort()
+people.sort()
 
 print("The next cycle of coffee break assignments:")
 
 members = []
-for _, person in pgms:
+for _, person in people:
   members.append(person.rstrip())
 
 for person1, person2 in zip(members[0::2], members[1::2]):
