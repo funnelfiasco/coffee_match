@@ -19,3 +19,10 @@ coffee_match accepts the following options:
 |   -h, --help | show this help message and exit
   -f FILE, --file=FILE | The roster file to use
 
+## Requirements
+
+coffee_match requires Python 3 with the following modules:
+
+* optparse
+* random
+* sys
