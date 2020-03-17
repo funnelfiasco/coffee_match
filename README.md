@@ -15,9 +15,9 @@ coffee_match reads the roster from a plain-text file, one line per participant.
 coffee_match accepts the following options:
 
 | Option | Description
-| ====== | ===========
-|   -h, --help | show this help message and exit
-  -f FILE, --file=FILE | The roster file to use
+| ------ | -----------
+| -h, --help | show this help message and exit
+|  -f FILE, --file=FILE | The roster file to use
 
 ## Requirements
 
