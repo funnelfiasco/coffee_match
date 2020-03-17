@@ -10,9 +10,24 @@
 #
 #####
 
+from optparse import OptionParser
 import random
+import sys
 
-team = open('team.txt','r')
+# Set up the parser
+parser = OptionParser()
+parser.add_option("-f", "--file", dest="rosterFile", metavar="FILE", \
+    help="The roster file to use", default="team.txt")
+(options, args) = parser.parse_args()
+
+# Open the roster file
+try:
+    team = open(options.rosterFile,'r')
+except FileNotFoundError:
+    sys.exit("COFFEE SPILLED: File %s not found" % options.rosterFile)
+except PermissionError:
+    sys.exit("COFFEE SPILLED: You cannot open file %s" % options.rosterFile)
+
 i=0
 
 people = [ (random.random(), person) for person in team]
