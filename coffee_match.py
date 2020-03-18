@@ -30,8 +30,9 @@ except PermissionError:
 
 i=0
 
+# Randomize the list of people
 people = [ (random.random(), person) for person in team]
-
+# The sort() makes it so we don't get the same result every time
 people.sort()
 
 print("The next cycle of coffee break assignments:")
