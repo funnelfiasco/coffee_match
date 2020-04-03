@@ -1,7 +1,7 @@
 # coffee_match.py
 
 Copyright 2020 by Ben Cotton.
-Licensed under the [copyleft-next license](https://github.com/copyleft-next/copyleft-next/blob/v0.3.0/Releases/copyleft-next-0.3.0).
+Licensed under the [copyleft-next license](https://github.com/copyleft-next/copyleft-next/blob/master/Releases/copyleft-next-0.3.1).
 
 coffee_match is a tool to help remote teams develop social bonds by randomly
 sorting a provided roster into groups to have informal meetings. A "coffee
@@ -40,7 +40,7 @@ coffee_match requires Python 3 with the following modules:
 
 ## Contributing
 
-Contributions to this project are accepted under the [copyleft-next license](https://github.com/copyleft-next/copyleft-next/blob/v0.3.0/Releases/copyleft-next-0.3.0).
+Contributions to this project are accepted under the [copyleft-next license](https://github.com/copyleft-next/copyleft-next/blob/master/Releases/copyleft-next-0.3.1).
 In other words, inbound equals outbound.
 
 All contributors agree to abide by the [Contributor Covenant](https://www.contributor-covenant.org/).

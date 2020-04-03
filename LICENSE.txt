@@ -1,5 +1,5 @@
-                   copyleft-next 0.3.0 ("this License")
-                         Release date: 2013-05-16
+                      copyleft-next 0.3.1 ("this License")
+                            Release date: 2016-04-29
 
 1. License Grants; No Trademark License
 
@@ -31,11 +31,11 @@
    If You Distribute a Derived Work, You must license the entire Derived
    Work as a whole under this License, with prominent notice of such
    licensing. This condition may not be avoided through such means as
-   separate Distribution of portions of the Derived Work. You may
-   additionally license the Derived Work under the GPL, so that the
-   recipient may further Distribute the Derived Work under either this
-   License or the GPL.
+   separate Distribution of portions of the Derived Work.
 
+   If the Derived Work includes material licensed under the GPL, You may
+   instead license the Derived Work under the GPL.
+   
 4. Condition Against Further Restrictions; Inbound License Compatibility
 
    When Distributing a Covered Work, You may not impose further
@@ -47,8 +47,9 @@
 
    However, You may Distribute a Covered Work incorporating material
    governed by a license that is both OSI-Approved and FSF-Free as of the
-   release date of this License, provided that Your Distribution complies
-   with such other license.
+   release date of this License, provided that compliance with such
+   other license would not conflict with any conditions stated in other
+   sections of this License.
 
 5. Conditions for Distributing Object Code
 
@@ -65,9 +66,9 @@
    available in a customarily accessible manner), You need not also comply
    with the first paragraph of this section.
 
-   Each recipient of the Covered Work from You is an intended third-party
-   beneficiary of this License solely as to this section 5, with the right
-   to enforce its terms.
+   Each direct and indirect recipient of the Covered Work from You is an
+   intended third-party beneficiary of this License solely as to this
+   section 5, with the right to enforce its terms.
 
 6. Symmetrical Licensing Condition for Upstream Contributions
 
@@ -83,11 +84,11 @@
    a license that is OSI-Approved or FSF-Free as of the release date of this
    License or a numbered version of copyleft-next released by the
    Copyleft-Next Project, then the license I grant You under section 1 is no
-   longer subject to the conditions in sections 2 through 5.
+   longer subject to the conditions in sections 3 through 5.
 
 8. Copyleft Sunset
 
-   The conditions in sections 2 through 5 no longer apply once fifteen
+   The conditions in sections 3 through 5 no longer apply once fifteen
    years have elapsed from the date of My first Distribution of My Work
    under this License.
 
@@ -151,8 +152,8 @@
 15. Definitions
 
     "Copyleft-Next Project" means the project that maintains the source
-    code repository at <https://gitorious.org/copyleft-next/> as of the
-    release date of this License.
+    code repository at <https://github.com/copyleft-next/copyleft-next.git/>
+    as of the release date of this License.
 
     "Corresponding Source" of a Covered Work in Object Code form means (i)
     the Source Code form of the Covered Work; (ii) all scripts,
