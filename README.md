@@ -37,3 +37,11 @@ coffee_match requires Python 3 with the following modules:
 * optparse
 * random
 * sys
+
+## Contributing
+
+Contributions to this project are accepted under the [copyleft-next license](https://github.com/copyleft-next/copyleft-next/blob/v0.3.0/Releases/copyleft-next-0.3.0).
+In other words, inbound equals outbound.
+
+All contributors agree to abide by the [Contributor Covenant](https://www.contributor-covenant.org/).
+See `code_of_conduct.md` in this repo.
