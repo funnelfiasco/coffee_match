@@ -14,8 +14,10 @@ from optparse import OptionParser
 import random
 import sys
 
+__version__ = 0.2
+
 # Set up the parser
-parser = OptionParser()
+parser = OptionParser(version="%prog " + str(__version__))
 parser.add_option("-f", "--file", dest="rosterFile", metavar="FILE", \
     help="The roster file to use", default="team.txt")
 parser.add_option("--remainder", dest="remainder", default="skip", \
