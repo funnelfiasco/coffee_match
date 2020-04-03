@@ -18,6 +18,7 @@ coffee_match accepts the following options:
 | ------ | -----------
 | -h, --help | show this help message and exit
 |  -f FILE, --file=FILE | The roster file to use
+| -s SIZE, --size=SIZE | The size of group to create
 
 ## Requirements
 
