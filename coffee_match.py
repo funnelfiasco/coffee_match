@@ -18,6 +18,8 @@ import sys
 parser = OptionParser()
 parser.add_option("-f", "--file", dest="rosterFile", metavar="FILE", \
     help="The roster file to use", default="team.txt")
+parser.add_option("-s", "--size", dest="groupSize", metavar="NUM", \
+        help="The size of matches", default=2, type="int")
 (options, args) = parser.parse_args()
 
 # Open the roster file
@@ -28,12 +30,18 @@ except FileNotFoundError:
 except PermissionError:
     sys.exit("COFFEE SPILLED: You cannot open file %s" % options.rosterFile)
 
-i=0
-
 # Randomize the list of people
 people = [ (random.random(), person) for person in team]
 # The sort() makes it so we don't get the same result every time
 people.sort()
+
+# Check to make sure the group size makes sense
+if options.groupSize <= 1:
+    sys.exit("COFFEE SPILLED: Group size %i is too small" % options.groupSize)
+elif options.groupSize > len(people):
+    sys.exit("COFFEE SPILLED: Group size %i is larger than the roster size %i" % \
+            (options.groupSize, len(people)))
+
 
 print("The next cycle of coffee break assignments:")
 
@@ -41,6 +49,17 @@ members = []
 for _, person in people:
   members.append(person.rstrip())
 
-for person1, person2 in zip(members[0::2], members[1::2]):
-  # Only print if there are two people
-  print("* %s & %s" % (person1, person2))
+i = 1
+total = 1
+for person in members:
+    if ((total - i) + options.groupSize) > len(members):
+        # We don't have enough for a full group
+        break
+    if i < options.groupSize:
+        print("%s & " % person, end ="")
+        i = i + 1
+        total = total + 1
+    else:
+        print("%s" % person)
+        i = 1
+        total = total + 1
