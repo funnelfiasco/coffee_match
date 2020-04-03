@@ -18,7 +18,17 @@ coffee_match accepts the following options:
 | ------ | -----------
 | -h, --help | show this help message and exit
 |  -f FILE, --file=FILE | The roster file to use
+| --remainder={skip,accept,merge} | How to deal with remainders (see below)
 | -s SIZE, --size=SIZE | The size of group to create
+
+### Remainders
+
+Sometimes your team doesn't divide evenly by your group size.
+In this case, you have three options:
+
+* **"skip" (default)**: The remaining people don't get included in a match this time
+* **"accept"**: The last group will be smaller, and that's okay. (*Note: if the final group is of size 1, we don't currently do anything about that. It's a risk you take*)
+* **"merge"**: Make the last group bigger by adding all of the remaining people to it.
 
 ## Requirements
 
