@@ -33,7 +33,11 @@ except PermissionError:
     sys.exit("COFFEE SPILLED: You cannot open file %s" % options.rosterFile)
 
 # Randomize the list of people
-people = [ (random.random(), person) for person in team]
+people = []
+for person in team:
+    # Check to make sure we're getting a person, not a blank line or a comment
+    if not (person == '\n' or person.startswith('#')):
+        people.append((random.random(), person))
 # The sort() makes it so we don't get the same result every time
 people.sort()
 
