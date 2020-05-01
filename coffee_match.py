@@ -55,7 +55,7 @@ if not options.remainder in ["skip", "merge", "accept"]:
     sys.exit("COFFEE SPILLED: I don't recognize the remainder strategy %s" % options.remainder)
 
 
-print("The next cycle of coffee break assignments:")
+print("The next cycle of coffee break matchups:")
 
 members = []
 for _, person in people:

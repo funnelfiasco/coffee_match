@@ -1,3 +1,8 @@
+# version 0.3
+Under development
+
+* Make a slight tweak to the output text so that it sounds gentler
+
 # version 0.2
 Released 2 April 2020
 
