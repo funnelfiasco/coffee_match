@@ -16,6 +16,8 @@ import sys
 
 __version__ = 0.2
 
+REMAINDER_STRATEGIES = [ 'skip', 'merge', 'accept' ]
+
 # Set up the parser
 parser = OptionParser(version="%prog " + str(__version__))
 parser.add_option("-f", "--file", dest="rosterFile", metavar="FILE", \
@@ -51,8 +53,8 @@ elif options.groupSize > len(people):
             (options.groupSize, len(people)))
 
 # Check to see if the remainder strategy is one we understand
-if not options.remainder in ["skip", "merge", "accept"]:
-    sys.exit("COFFEE SPILLED: I don't recognize the remainder strategy %s" % options.remainder)
+if not options.remainder in REMAINDER_STRATEGIES:
+    sys.exit("COFFEE SPILLED: I don't recognize the remainder strategy %s.\nSupported options are %s" % (options.remainder, ', '.join(REMAINDER_STRATEGIES)))
 
 
 print("The next cycle of coffee break matchups:")
