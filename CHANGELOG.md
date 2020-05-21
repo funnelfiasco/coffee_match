@@ -3,6 +3,7 @@ Under development
 
 * Make a slight tweak to the output text so that it sounds gentler
 * Give the supported remainder options in the error output ([#12](https://github.com/funnelfiasco/coffee_match/issues/12))
+* Switch to using argparse for parsing the arguments ([#10](https://github.com/funnelfiasco/coffee_match/issues/10))
 
 # version 0.2
 Released 2 April 2020

@@ -10,7 +10,7 @@
 #
 #####
 
-from optparse import OptionParser
+import argparse
 import random
 import sys
 
@@ -19,14 +19,14 @@ __version__ = 0.2
 REMAINDER_STRATEGIES = [ 'skip', 'merge', 'accept' ]
 
 # Set up the parser
-parser = OptionParser(version="%prog " + str(__version__))
-parser.add_option("-f", "--file", dest="rosterFile", metavar="FILE", \
+parser = argparse.ArgumentParser(prog="coffee_match.py " + str(__version__), epilog="For bugs, visit https://github.com/funnelfiasco/coffee_match/")
+parser.add_argument("-f", "--file", dest="rosterFile", metavar="FILE", \
     help="The roster file to use", default="team.txt")
-parser.add_option("--remainder", dest="remainder", default="skip", \
+parser.add_argument("--remainder", dest="remainder", default="skip", \
         help="What to do with remainders: skip (default), merge, accept")
-parser.add_option("-s", "--size", dest="groupSize", metavar="NUM", \
-        help="The size of matches", default=2, type="int")
-(options, args) = parser.parse_args()
+parser.add_argument("-s", "--size", dest="groupSize", metavar="NUM", \
+        help="The size of matches", default=2, type=int)
+options = parser.parse_args()
 
 # Open the roster file
 try:
