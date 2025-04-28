@@ -1,0 +1,16 @@
+vars:
+  token: {{ TOKEN }} # GH classic token with all repo: read permissions
+  owner: funnelfiasco
+
+policy:
+  catalogs:
+    - OSPS_B
+  applicability:
+    - Maturity Level 1
+
+write-directory: evaluation_results
+services:
+  coffee_match:
+    plugin: github-repo
+    vars:
+      repo: coffee_match
